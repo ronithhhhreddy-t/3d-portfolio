@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="/src/shared/styles/reset.css" />
+
+    <link rel="stylesheet" href="/src/pages/project/project-page.css" />
+
+    <link rel="icon" type="image/svg+xml" href="/brand/logo-rr.svg" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type="module" src="/src/pages/project/projectPage.js"></script>
+
+    <meta
+      name="description"
+      content="Visual identity for Ornate, a fictional architecture studio: logo, brand guidelines, print, web design and motion."
+      data-i18n-attr="content:projects.ornate.description"
+    />
+    <title data-i18n="projects.ornate.title">
+      Ornate — Visual Identity &amp; Architecture | Ronith Reddy
+    </title>
+    <meta
+      property="og:title"
+      content="Ornate — Visual Identity &amp; Architecture | Ronith Reddy"
+      data-i18n-attr="content:projects.ornate.title"
+    />
+    <meta
+      property="og:description"
+      content="Visual identity for Ornate, a fictional architecture studio: logo, brand guidelines, print, web design and motion."
+      data-i18n-attr="content:projects.ornate.description"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og/ornate.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Preview of Ornate, a visual identity project for an architecture studio"
+      data-i18n-attr="content:projects.ornate.imageAlt"
+    />
+  </head>
+
+  <body class="project-page" data-project="ornate" data-theme="cream">
+    <!-------- TRANSITION -------->
+    <script>
+      if (sessionStorage.getItem("pageTransitionPending") === "true") {
+        const storedColor = sessionStorage.getItem("pageTransitionColor")
+        const color = storedColor === "dark" ? "dark" : "cream"
+
+        const transition = document.createElement("div")
+
+        transition.classList.add("page-transition", `page-transition--${color}`)
+
+        transition.setAttribute("aria-hidden", "true")
+        document.body.prepend(transition)
+      }
+    </script>
+
+    <!-------- HEADER -------->
+    <header class="site-header"></header>
+
+    <a
+      class="project-back"
+      href="/#projects"
+      tabindex="-1"
+      aria-label="Back to project list"
+      data-i18n-attr="aria-label:projects.ornate.backLabel"
+    >
+      <svg
+        class="project-back__icon"
+        width="62"
+        height="15"
+        viewBox="0 0 62 15"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <path
+          class="project-back__shaft"
+          d="M60.3018 7.37256L2.30176 7.37256"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+
+        <path
+          class="project-back__arrowhead"
+          d="M7.26025 13.7279L1.07307 7.54074C0.975439 7.44311 0.975439 7.28482 1.07307 7.18718L7.26025 1"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+    </a>
+
+    <main class="project-page__main">
+      <section class="project-scroll">
+        <!-- Scroll length -->
+        <div class="project-scroll__pin-height">
+          <!-- Pin -->
+          <div class="project-scroll__container">
+            <!-- Content -->
+            <div class="project-scroll__track">
+              <!-- Section Intro -->
+              <section class="project-panel project-panel--intro">
+                <div class="project-intro">
+                  <video
+                    src="/projects/ornate/media/ornate-intro1.mp4"
+                    class="project-intro__visual project-intro__visual--primary"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    aria-hidden="true"
+                  ></video>
+
+                  <img
+                    src="/projects/ornate/media/ornate-intro2.webp"
+                    alt=""
+                    class="project-intro__visual project-intro__visual--secondary"
+                  />
+
+                  <h1 class="project-intro__title project-intro__title--one-line">Ornate</h1>
+
+                  <p class="visually-hidden" data-i18n="projects.ornate.introDescription">
+                    Preview of Ornate’s identity: an animated website combining typography,
+                    classical statues and fluid effects with a 3D universe of rose-gold grids,
+                    liquid forms and vegetation.
+                  </p>
+                </div>
+              </section>
+
+              <!-- Section Context -->
+              <section class="project-panel project-panel--context">
+                <div class="project-context project-context--with-links">
+                  <ul class="project-context__categories">
+                    <li class="project-context__category">Art Direction</li>
+                    <li class="project-context__category">Brand Identity</li>
+                    <li class="project-context__category">Personal Project</li>
+                  </ul>
+
+                  <div class="project-context__texts">
+                    <p class="project-context__text" data-i18n="projects.ornate.context1">
+                      Creation of Ornate’s visual identity, conceived for an architecture studio and
+                      extended across a 360° ecosystem: logo, brand guidelines, print, web design and
+                      motion.
+                    </p>
+                    <p class="project-context__text" data-i18n="projects.ornate.context2">
+                      A luxurious and dreamlike universe where classical references, mineral
+                      textures and architectural structures meet a contemporary aesthetic.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Section Ellipse -->
+              <section class="project-panel project-panel--ellipse">
+                <div class="project-ellipse">
+                  <img
+                    src="/projects/ornate/media/ornate-ellipse1.webp"
+                    alt="Main Ornate artwork combining a classical statue, a rose-gold grid, fluid material and pink ferns in a 3D composition."
+                    data-i18n-attr="alt:projects.ornate.ellipseAlt"
+                    class="project-ellipse__visual"
+                  loading="lazy"
+                  decoding="async"
+                  />
+                </div>
+              </section>
+
+              <!-- Section Gallery -->
+              <section class="project-panel project-panel--gallery">
+                <div class="project-gallery">
+                  <div class="project-gallery__slides">
+                    <!-- Initial spacers -->
+                    <div
+                      class="project-gallery__slide project-gallery__slide--spacer"
+                      aria-hidden="true"
+                    >
+                      <div class="project-gallery__media"></div>
+                    </div>
+
+                    <div
+                      class="project-gallery__slide project-gallery__slide--spacer"
+                      aria-hidden="true"
+                    >
+                      <div class="project-gallery__media"></div>
+                    </div>
+
+                    <!-- Gallery media 1 -->
+                    <div class="project-gallery__slide">
+                      <img
+                        class="project-gallery__media"
+                        src="/projects/ornate/media/ornate-gallery1.webp"
+                        alt="Atmospheric image in Ornate’s color palette, blending deep aqua green with antique pink in a gradient sky."
+                        data-i18n-attr="alt:projects.ornate.gallery1Alt"
+                      loading="lazy"
+                      decoding="async"
+                      />
+                    </div>
+
+                    <!-- Gallery media 2 -->
+                    <div class="project-gallery__slide">
+                      <img
+                        class="project-gallery__media"
+                        src="/projects/ornate/media/ornate-gallery2.webp"
+                        alt="Ornate studio letterhead presented in context and designed within the brand’s visual identity."
+                        data-i18n-attr="alt:projects.ornate.gallery2Alt"
+                      loading="lazy"
+                      decoding="async"
+                      />
+                    </div>
+
+                    <!-- Gallery media 3 -->
+                    <div class="project-gallery__slide">
+                      <video
+                        class="project-gallery__media"
+                        src="/projects/ornate/media/ornate-gallery3.mp4"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata"
+                        aria-hidden="true"
+                      ></video>
+                      <p class="visually-hidden" data-i18n="projects.ornate.gallery3Description">
+                        Website animation where a trophy transforms into a fluid form in front of the
+                        words “Award-winning team”.
+                      </p>
+                    </div>
+
+                    <!-- Gallery media 4 -->
+                    <div class="project-gallery__slide">
+                      <img
+                        class="project-gallery__media"
+                        src="/projects/ornate/media/ornate-gallery4.webp"
+                        alt="Cover and mockup of the “Case Studies 2019–2020” magazine designed for the Ornate architecture studio."
+                        data-i18n-attr="alt:projects.ornate.gallery4Alt"
+                      loading="lazy"
+                      decoding="async"
+                      />
+                    </div>
+
+                    <!-- Gallery media 6 -->
+                    <div class="project-gallery__slide">
+                      <img
+                        class="project-gallery__media"
+                        src="/projects/ornate/media/ornate-gallery6.webp"
+                        alt="Ornate business cards showcasing the studio’s colors, typography and visual identity."
+                        data-i18n-attr="alt:projects.ornate.gallery6Alt"
+                      loading="lazy"
+                      decoding="async"
+                      />
+                    </div>
+
+                    <!-- Gallery media 7 -->
+                    <div class="project-gallery__slide">
+                      <video
+                        class="project-gallery__media"
+                        src="/projects/ornate/media/ornate-gallery7.mp4"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata"
+                        aria-hidden="true"
+                      ></video>
+                      <p class="visually-hidden" data-i18n="projects.ornate.gallery7Description">
+                        Animated website mockup presenting Ornate’s projects through a travelling
+                        sequence.
+                      </p>
+                    </div>
+
+                    <!-- Gallery media 8 -->
+                    <div class="project-gallery__slide">
+                      <video
+                        class="project-gallery__media"
+                        src="/projects/ornate/media/ornate-gallery8.mp4"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        preload="metadata"
+                        aria-hidden="true"
+                      ></video>
+                      <p class="visually-hidden" data-i18n="projects.ornate.gallery8Description">
+                        Variation of the animated website mockup, presenting another selection of
+                        Ornate projects through a travelling sequence.
+                      </p>
+                    </div>
+
+                    <!-- Gallery media 9 -->
+                    <div class="project-gallery__slide">
+                      <img
+                        class="project-gallery__media"
+                        src="/projects/ornate/media/ornate-gallery9.webp"
+                        alt="Cover and mockup of the “Case Studies 2020–2021” magazine designed for Ornate."
+                        data-i18n-attr="alt:projects.ornate.gallery9Alt"
+                      loading="lazy"
+                      decoding="async"
+                      />
+                    </div>
+
+                    <!-- Gallery media 10 -->
+                    <div class="project-gallery__slide">
+                      <img
+                        class="project-gallery__media"
+                        src="/projects/ornate/media/ornate-gallery10.webp"
+                        alt="Variation of Ornate’s 3D artwork combining a rose-gold grid, fluid material, pink ferns and the studio logotype."
+                        data-i18n-attr="alt:projects.ornate.gallery10Alt"
+                      loading="lazy"
+                      decoding="async"
+                      />
+                    </div>
+
+                    <!-- Gallery media 11 -->
+                    <div class="project-gallery__slide">
+                      <img
+                        class="project-gallery__media"
+                        src="/projects/ornate/media/ornate-gallery11.webp"
+                        alt="Another variation of Ornate’s 3D universe, blending classical references, fluid materials and the studio’s visual identity."
+                        data-i18n-attr="alt:projects.ornate.gallery11Alt"
+                      loading="lazy"
+                      decoding="async"
+                      />
+                    </div>
+
+                    <!-- Final spacers -->
+                    <div
+                      class="project-gallery__slide project-gallery__slide--spacer"
+                      aria-hidden="true"
+                    >
+                      <div class="project-gallery__media"></div>
+                    </div>
+
+                    <div
+                      class="project-gallery__slide project-gallery__slide--spacer"
+                      aria-hidden="true"
+                    >
+                      <div class="project-gallery__media"></div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Section Next -->
+              <section class="project-panel project-panel--next">
+                <div class="project-next">
+                  <!-- Links words -->
+                  <a
+                    href="/projects/mae-webflow/"
+                    class="project-next__link"
+                    tabindex="-1"
+                    aria-label="Discover Maë Webflow"
+                    data-i18n-attr="aria-label:projects.ornate.nextLabel"
+                  >
+                    <h2 class="project-next__title">
+                      <!-- Left word -->
+                      <span
+                        class="project-next__word project-next__word--left"
+                        data-i18n="projects.ornate.nextLeft"
+                      >Up</span>
+
+                      <!-- Right word group -->
+                      <span class="project-next__right">
+                        <span
+                          class="project-next__word project-next__word--right"
+                          data-i18n="projects.ornate.nextRight"
+                        >next</span>
+
+                        <span class="project-next__project-name">maë webflow</span>
+                      </span>
+                    </h2>
+
+                    <!-- Medias -->
+                    <div class="project-next__medias" aria-hidden="true">
+                      <img
+                        class="project-next__media"
+                        src="/projects/mae-webflow/previews/webflow-01-square.webp"
+                        alt=""
+                        loading="lazy"
+                      />
+
+                      <img
+                        class="project-next__media"
+                        src="/projects/mae-webflow/previews/webflow-03-portrait.webp"
+                        alt=""
+                        loading="lazy"
+                      />
+
+                      <img
+                        class="project-next__media project-next__media--logo"
+                        src="/projects/mae-webflow/logos/webflow-logo.png"
+                        alt=""
+                        loading="lazy"
+                      />
+
+                      <img
+                        class="project-next__media"
+                        src="/projects/mae-webflow/previews/webflow-02-square.webp"
+                        alt=""
+                        loading="lazy"
+                      />
+
+                      <img
+                        class="project-next__media"
+                        src="/projects/mae-webflow/previews/webflow-06-portrait.webp"
+                        alt=""
+                        loading="lazy"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
